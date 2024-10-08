@@ -25,7 +25,7 @@ textarea{
     margin-top: 2rem;
     font-size: 14px;
     font-weight: 500;
-    border-radius: px;
+    border-radius: 2px;
     position: relative;
     background: radial-gradient(328px at 2.9% 15%, rgb(191, 224, 251) 0%, rgb(232, 233, 251) 25.8%, rgb(252, 239, 250) 50.8%, rgb(234, 251, 251) 77.6%, rgb(240, 251, 244) 100.7%);
     resize: none;
@@ -39,7 +39,7 @@ textarea:focus {
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 .buttons-container{
-  border: 5px solid black;
+  /* border: 5px solid black; */
   width: 100%;
   display: flex;
   justify-content: center;
@@ -47,7 +47,7 @@ textarea:focus {
   height: auto;
 }
 .buttons-container .buttons{
-  border: 2px solid green;
+  /* border: 2px solid green; */
   width: 70%;
   padding: 0.7rem;
   display: flex;
