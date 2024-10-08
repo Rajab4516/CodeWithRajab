@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+::selection {
+  background-color: #ffcc00; /* Custom background color */
+  color: #000; /* Custom text color */
+}
+
+/* For Firefox */
+::-moz-selection {
+  background-color: #ffcc00; /* Custom background color */
+  color: #000; /* Custom text color */
+}
+body{
+  /* background-color: #ffff9d; */
+  background-color: rgb(255, 255, 255);
+}
+.navbar-main-container{
+  /* border: 5px solid rgb(255, 0, 0); */
+  width: 100%;
+  height: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar-container{
+  /* border: 3px solid red; */
+  width: 80%;
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ff6138;
+  border-radius: 5px;
+}
+.navbar-logo-container{
+  /* border: 2px solid black; */
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding-bottom: 13px;
+}
+.navbar-links-container{
+  width: 50%;
+  height: 100%;
+  /* border: 3px solid black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar-links-container ul{
+  display: flex;
+}
+.navbar-links-container ul li{
+  list-style-type: none;
+}
+.navbar-links-container ul li a{
+  font-size: 18px;
+  padding: 8px 14px;
+  margin: 20px;
+  /* background-color: aliceblue; */
+  color: aliceblue;
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.3s all;
+  border-radius:5px;
+}
+.navbar-links-container ul li a:hover{
+  background-color: #242424;
+  color: aliceblue;
+}
+.navbar-resume-button-container{
+  width: 15%;
+  height: 100%;
+  /* border: 3px solid black; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar-resume-button-container button{
+  padding: 12px 20px;
+  outline: none;
+  border: 0;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  font-weight: 500;
+  color: aliceblue;
+  background-color: #242424;
+  transition: 0.4s all;
+}
+.navbar-resume-button-container button:hover{
+  background-color: aliceblue;
+  color: #242424;
+}
+#navbar-logo{
+  width: 100%;
+}
+.banner-main-container{
+  border: 5px solid black;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner-main-container .banner-col-1{
+  border: 5px solid green;
+  width: 50%;
+  height: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner-col-1 .col-1-text{
+  /* border: 3px solid black; */
+  width: 90%;
+}
+.banner-col-1 .col-1-text h1{
+  font-size: 4rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #ff6138;
+}
+.banner-col-1 .col-1-text p{
+  text-align: justify;
+  line-height: 1.5rem;
+}
+.banner-col-1 .col-1-text p::first-letter{
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+.banner-col-1 .col-1-text .banner-col-1-button-container{
+  /* border: 3px solid black; */
+  margin-top: 1rem;
+  padding-top: 1rem;
+}
+.banner-col-1 .col-1-text .banner-col-1-button-container button{
+  padding: 8px 14px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 0.9rem;
+  border: none;
+  outline: none;
+  background-color: #242424;
+  color: aliceblue;
+  transition: 0.4s;
+}
+.banner-col-1 .col-1-text .banner-col-1-button-container #fiver-btn{
+  margin-right: 10px;
+  border-radius: 5px;
+  background-color: #00b22d;
+  cursor: pointer;
+}
+.banner-col-1 .col-1-text .banner-col-1-button-container #upwork-btn{
+  margin-right: 10px;
+  border-radius: 5px;
+  background-color: #343534;
+  cursor: pointer;
+}
+.banner-col-1 .col-1-text .banner-col-1-button-container #email-btn{
+  border-radius: 5px;
+  background-color: #ff6138;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.banner-main-container .banner-col-2{
+  border: 5px solid green;
+  width: 45%;
+  height: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner-main-container .banner-col-2 img{
+  width: 70%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 320px) and (max-width: 575px) {
+  /* Styles for small devices */
+  .navbar-main-container{
+  border: 5px solid rgb(255, 0, 0);
+  height: 6rem;
+}
+.navbar-container{
+  /* border: 3px solid red; */
+  width: 90%;
+  height: 4rem;
+  border-radius: 3px;
+}
+.navbar-logo-container{
+  width: 30%;
+}
+.navbar-links-container{
+  width: 70%;
+  height: 100%;
+  /* border: 3px solid black; */
+  display: block;
+  position: absolute;
+  top: 0%;
+  left: -70%;
+  background-color: #ff6138;
+}
+.navbar-links-container ul{
+  display: block;
+  margin-top: 3rem;
+}
+.navbar-links-container ul li{
+  list-style-type: none;
+  line-height: 3rem;
+}
+.navbar-links-container ul li a{
+  font-size: 16px;
+  padding: 0px;
+  margin-left: 20px;
+}
+.navbar-resume-button-container{
+  width: 40%;
+  height: 100%;
+  /* border: 3px solid black; */
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.navbar-resume-button-container button{
+  padding: 10px 12px;
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: 400;
+}
+#navbar-logo{
+  width: 190%;
+}
+.banner-main-container{
+  border: 5px solid black;
+  width: 100%;
+  height: 80vh;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.banner-main-container .banner-col-1{
+  border: 5px solid green;
+  width: 50%;
+  height: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner-col-1 .col-1-text{
+  /* border: 3px solid black; */
+  width: 90%;
+}
+.banner-col-1 .col-1-text h1{
+  font-size: 4rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #ff6138;
+}
+.banner-col-1 .col-1-text p{
+  text-align: justify;
+  line-height: 1.5rem;
+}
+.banner-col-1 .col-1-text p::first-letter{
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+.banner-col-1 .col-1-text .banner-col-1-button-container{
+  /* border: 3px solid black; */
+  margin-top: 1rem;
+  padding-top: 1rem;
+}
+.banner-col-1 .col-1-text .banner-col-1-button-container button{
+  padding: 8px 14px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 0.9rem;
+  border: none;
+  outline: none;
+  background-color: #242424;
+  color: aliceblue;
+  transition: 0.4s;
+}
+.banner-col-1 .col-1-text .banner-col-1-button-container #fiver-btn{
+  margin-right: 10px;
+  border-radius: 5px;
+  background-color: #00b22d;
+  cursor: pointer;
+}
+.banner-col-1 .col-1-text .banner-col-1-button-container #upwork-btn{
+  margin-right: 10px;
+  border-radius: 5px;
+  background-color: #343534;
+  cursor: pointer;
+}
+.banner-col-1 .col-1-text .banner-col-1-button-container #email-btn{
+  border-radius: 5px;
+  background-color: #ff6138;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.banner-main-container .banner-col-2{
+  border: 5px solid green;
+  width: 45%;
+  height: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner-main-container .banner-col-2 img{
+  width: 70%;
+}
+
+}

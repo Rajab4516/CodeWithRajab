@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.text-form-main-container {
+   /* border: 5px solid black; */
+   width: 100%;
+   height: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.text-form-main-container .container .text-form-heading-container{
+    text-align: center;
+    background: linear-gradient(109.6deg, rgb(255, 230, 109) 11.2%, rgb(87, 232, 107) 100.2%);
+    color: rgb(59, 59, 59);
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 500;
+}
+.text-form-main-container .container .text-form-heading-container h1{
+    font-weight: 500;
+}
+textarea{
+    font-family: "Poppins", sans-serif;
+    padding: 12px;
+    margin-top: 2rem;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 5px;
+    position: relative;
+    background: radial-gradient(328px at 2.9% 15%, rgb(191, 224, 251) 0%, rgb(232, 233, 251) 25.8%, rgb(252, 239, 250) 50.8%, rgb(234, 251, 251) 77.6%, rgb(240, 251, 244) 100.7%);
+    resize: none;
+}
+textarea:hover {
+  border-color: #888;
+}
+textarea:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
