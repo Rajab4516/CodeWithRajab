@@ -134,7 +134,6 @@ export default function DarkMode() {
         <div className="container">
             <button className="btn btn-md btn-danger btn-hover" onClick={toggleDarkModeBtn}>{darkModeBtnText}</button>
         </div>
-      
     </>
   );
 }

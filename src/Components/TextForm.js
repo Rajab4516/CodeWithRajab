@@ -23,6 +23,10 @@ function TextForm(props) {
     alert("Text Copied Successfully 🙌");
   }
 
+  const handleRemoveExtraSpaces = () =>{
+    let newText = text.split(/[ ]+/);
+    setText(newText.join(" "));
+  }
   const handleOnChange = (event) => {
     setText(event.target.value);
   };
@@ -48,7 +52,8 @@ function TextForm(props) {
           <button className="btn btn-danger btn-sm btn-hover" onClick={handleUpperCase}>Convert To UpperCase</button>
           <button className="btn btn-danger btn-sm btn-hover" onClick={handleLowerCase}>Convert To LowerCase</button>
           <button className="btn btn-danger btn-sm btn-hover" onClick={handleClearText}>Clear Text</button>
-          <button className="btn btn-danger btn-sm btn-hover">Enable Dark Mode</button>
+          <button className="btn btn-danger btn-sm btn-hover" onClick={handleRemoveExtraSpaces}>Remove Extra Spaces</button>
+          {/* <button className="btn btn-danger btn-sm btn-hover">Enable Dark Mode</button> */}
         </div>
       </div>
       <div className="container mt-3 mb-3">
