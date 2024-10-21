@@ -6,13 +6,13 @@
 }
 ::selection {
   background-color: #ffcc00; /* Custom background color */
-  color: #000; /* Custom text color */
+  color: #3b3b3b; /* Custom text color */
 }
 
 /* For Firefox */
 ::-moz-selection {
   background-color: #ffcc00; /* Custom background color */
-  color: #000; /* Custom text color */
+  color: #3b3b3b; /* Custom text color */
 }
 body{
   /* background-color: #ffff9d; */

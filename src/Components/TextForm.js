@@ -49,15 +49,15 @@ function TextForm(props) {
       </div>
       <div className="buttons-container">
         <div className="buttons">
-          <button className="btn btn-danger btn-sm btn-hover" onClick={handleUpperCase}>Convert To UpperCase</button>
-          <button className="btn btn-danger btn-sm btn-hover" onClick={handleLowerCase}>Convert To LowerCase</button>
-          <button className="btn btn-danger btn-sm btn-hover" onClick={handleClearText}>Clear Text</button>
-          <button className="btn btn-danger btn-sm btn-hover" onClick={handleRemoveExtraSpaces}>Remove Extra Spaces</button>
-          {/* <button className="btn btn-danger btn-sm btn-hover">Enable Dark Mode</button> */}
+          <button className={`btn btn-${props.mode === 'primary'? 'danger':'primary'} btn-sm btn-hover`} onClick={handleUpperCase}>Convert To UpperCase</button>
+          <button className={`btn btn-${props.mode === 'primary'? 'danger':'primary'} btn-sm btn-hover`} onClick={handleLowerCase}>Convert To LowerCase</button>
+          <button className={`btn btn-${props.mode === 'primary'? 'danger':'primary'} btn-sm btn-hover`} onClick={handleClearText}>Clear Text</button>
+          <button className={`btn btn-${props.mode === 'primary'? 'danger':'primary'} btn-sm btn-hover`} onClick={handleRemoveExtraSpaces}>Remove Extra Spaces</button>
+          {/* <button className="btn btn-danger btn-sm btn-hover">Enable Dark Mode</button>s */}
         </div>
       </div>
       <div className="container mt-3 mb-3">
-        <table class="table table-info">
+        <table className="table table-info">
           <thead>
             <tr>
               <th scope="col">Words</th>
@@ -74,12 +74,12 @@ function TextForm(props) {
           </tbody>
         </table>
       </div>
-      <div className="container bg-danger p-2 mb-5">
+      <div className={`container bg-${props.mode === 'primary'? 'danger':'dark'} p-2 mb-5`}>
         <h5 className="bg-light text-dark p-2">Text Preview</h5>
         <p className="text-light m-2">{text}</p>
-        <button className="btn btn-sm btn-dark text-light" onClick={handleCopyText}>Copy Text</button>
+        <button className={`btn btn-sm btn-${props.mode === 'primary'? 'dark':'primary'} text-light`} onClick={handleCopyText}>Copy Text</button>
       </div>
-      <div className="container bg-primary p-2 mb-5">
+      <div className={`container bg-${props.mode === 'primary'? 'danger':'dark'} p-2 mb-5`}>
         <h5 className="bg-light text-dark p-2">Text Summary</h5>
         <p className="text-light m-2">{0.008 * text.split("").length} Minutes to Read</p>
       </div>

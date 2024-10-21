@@ -1,7 +1,7 @@
 import React from "react";
 import logoImage from './images/navbar-logo.png';
 
-function Navbar() {
+function Navbar(props) {
   return (
     <>
       <div className="navbar-main-container">
@@ -18,7 +18,7 @@ function Navbar() {
             </ul>
           </div>
           <div className="navbar-resume-button-container">
-            <button>Resume</button>
+            <button className="btn btn-sm btn-light bg-danger">Resume</button>
           </div>
         </div>
       </div>
