@@ -2,7 +2,7 @@ import React from "react";
 export default function Navbar2(props) {
   return (
     <>
-      <nav className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode} mb-3`}>
+      <nav className={`navbar sticky-top navbar-expand-lg navbar-${props.mode} bg-${props.mode} mb-3`}>
         <div className="container-fluid">
           <a className="navbar-brand" href="/">
           <h4 className="text-light">TextForm</h4>

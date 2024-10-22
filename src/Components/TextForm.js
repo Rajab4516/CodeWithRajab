@@ -6,26 +6,30 @@ function TextForm(props) {
   const handleUpperCase = () => {
     let newText = text.toLocaleUpperCase();
     setText(newText);
+    props.showAlert('Text Has Been Successfully Converted to Uppercase', 'success');
   };
 
   const handleLowerCase = () => {
     let newText = text.toLocaleLowerCase();
     setText(newText);
+    props.showAlert('Text Has Been Successfully Converted to Lowerercase', 'success');
   };
 
   const handleClearText = () => {
     let newText = "";
     setText(newText);
+    props.showAlert('Text Has Been Cleared Successfully', 'success');
   };
 
   const handleCopyText = () =>{
     navigator.clipboard.writeText(text);
-    alert("Text Copied Successfully 🙌");
+    props.showAlert('Text Has Been Copied Successfully', 'success');
   }
 
   const handleRemoveExtraSpaces = () =>{
     let newText = text.split(/[ ]+/);
     setText(newText.join(" "));
+    props.showAlert('Extra Spaces Has Been Removed Successfully', 'success');
   }
   const handleOnChange = (event) => {
     setText(event.target.value);
